@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="790a5b21-b4c4-45bb-876a-c63c97cc3837" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="790a5b21-b4c4-45bb-876a-c63c97cc3837" name="Changes" comment="Get user input for city" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,11 +105,37 @@
       <option name="project" value="LOCAL" />
       <updated>1733489176510</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Simplified code for readability">
+      <option name="closed" value="true" />
+      <created>1733490092176</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733490092176</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Simplified code for readability">
+      <option name="closed" value="true" />
+      <created>1733490141582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733490141582</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Get user input for city">
+      <option name="closed" value="true" />
+      <created>1733490343315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733490343315</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Simplified code for readability" />
+    <MESSAGE value="Get user input for city" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get user input for city" />
   </component>
 </project>
