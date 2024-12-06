@@ -24,5 +24,5 @@ def get_weather(city_name, api_key, units='imperial'):
             file.write(f'{city_name}, {forecast['dt_txt']}, {forecast['main']['temp']}, {forecast['weather'][0]['description']}\n')
 
 api = os.getenv("API_KEY")
-city = "Bloomington"
+city = input("What city do you want the forecast for?")
 get_weather(city, api)
