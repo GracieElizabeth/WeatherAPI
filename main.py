@@ -1,8 +1,8 @@
 """
-Will use https://openweathermap.org/ API to get weather forcast for 5 days
-Weather forcast data with 3 hour step
+Will use https://openweathermap.org/ API to get weather forecast for 5 days.
+Weather forecast data with 3 hour step.
 
-main.py will put all the data from user provided city into data.txt file
+It will put all the data from user provided city into data.txt file
 """
 import os
 import requests
