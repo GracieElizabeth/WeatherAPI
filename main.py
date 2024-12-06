@@ -9,23 +9,20 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
-api_key = os.getenv("API_KEY")
 
-city_name = "Bloomington"
+def get_weather(city_name, api_key, units='imperial'):
+    url = f'https://api.openweathermap.org/data/2.5/forecast?q={city_name}&appid={api_key}&units={units}'
 
-url = f'https://api.openweathermap.org/data/2.5/forecast?q={city_name}&appid={api_key}'
+    print(url)
+    r = requests.get(url)
+    response = r.json()
+    city_name = response['city']['name']
 
-print(url)
-r = requests.get(url)
-response = r.json()
+    with open('data.txt', 'w') as file:
+        file.write("City, Time, Temperature, Condition\n")
+        for forecast in response["list"]:
+            file.write(f'{city_name}, {forecast['dt_txt']}, {forecast['main']['temp']}, {forecast['weather'][0]['description']}\n')
 
-city = response['city']['name']
-
-with open('data.txt', 'w') as file:
-    file.write("City, Time, Temperature, Condition\n")
-    for forecast in response["list"]:
-        file.write(f'{city}, ')
-        file.write(f'{forecast['dt_txt']}, ')
-        file.write(f'{forecast['main']['temp']}, ')
-        for condition in forecast['weather']:
-            file.write(f'{condition['description']}\n')
+api = os.getenv("API_KEY")
+city = "Bloomington"
+get_weather(city, api)
